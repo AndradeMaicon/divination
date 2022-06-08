@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Divination</title>
+</head>
+<body>
+  <div id="container">
+    <h1 id="title">
+      Faça uma pergunta e <br/> teste a usa sorte.
+    </h1>
+
+    <img id="crystal-ball" src="images/crystal-ball.png" alt="imagem de uma bola de cristal">
+
+    <form id="form" method="POST" action="/index">
+      <label id="divination-label" for="divination-input">Insira sua pergunta:</label>
+      <input 
+        form="form" 
+        id="divination-input"
+        type="text"
+        name="question" 
+        placeholder="Esse ano eu vou viajar?"
+      />
+      <button id="button" type="submit">Perguntar</button>
+    </form>
+
+    <span id="presentation" name="presentation"></span>
+    <strong id="response"></strong>
+  </div>
+</body>
+</html>

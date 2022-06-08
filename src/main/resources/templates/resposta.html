@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Resposta</title>
+</head>
+<body>
+  <div id="container">
+    <img id="crystal-ball" src="images/crystal-ball.png" alt="imagem de uma bola de cristal">
+    <span id="presentation" name="presentation" th:text="${response.question}"></span>
+    <h1 id="response" th:text="${response.response}"></h1>
+    <a href="./" id="go-back">Perguntar de novo</a>
+  </div>
+</body>
+</html>
